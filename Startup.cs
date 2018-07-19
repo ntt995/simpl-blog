@@ -25,7 +25,7 @@ namespace SimplBlog
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "simpl-blog-app/dist";
             });
         }
 
@@ -58,7 +58,7 @@ namespace SimplBlog
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "simpl-blog-app";
 
                 if (env.IsDevelopment())
                 {
